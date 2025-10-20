@@ -1,0 +1,38 @@
+name: gen_safe
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+  - assets/images/logo.png
+  - assets/images/Ocha.png
+  - assets/images/logoUtama.png
+  - assets/images/frame128.png
+  - assets/images/frame141_2.png
+  - assets/images/frame141_3.png
+  - assets/images/frame141.png  
+  - assets/images/frame142.png
+  - assets/images/genfren.png
+  - assets/images/genplay.png
+  - assets/images/home3.png
+  - assets/images/maskot.png
+  - assets/images/nurse.png
+  - assets/images/pattern.png
+  - assets/images/frame281.png
+  - assets/images/game_welcome.png
+  
