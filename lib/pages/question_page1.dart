@@ -63,32 +63,42 @@ class _QuestionPage1State extends State<QuestionPage1>
     {
       "image": "assets/images/question6_card1.png",
       "answer": "Ya",
-      "explanationTrue": "",
-      "explanationFalse": "",
+      "explanationTrue": 
+      "Yes, bener banget! Tumbuh payudara itu adalah salah satu tanda pertama tubuh cewek mulai  memasuki pubertas.",
+      "explanationFalse": 
+      "Ups, kurang tepat nih! Justru itu tanda jelas pubertas udah dimulai, lho. Tubuh kamu lagi  berkembang secara alami!",
     },
     {
       "image": "assets/images/question7_card1.png",
       "answer": "Tidak",
-      "explanationTrue": "",
-      "explanationFalse": "",
+      "explanationTrue": 
+      "Yes, bener banget! Kadang emosi itu bisa berubah cepat karena hormon lagi aktif banget. Totally  normal ya!",
+      "explanationFalse": 
+      "Ups, kurang tepat nih! Pas puber emang wajar banget kalo emosi suka gak stabil, karena hormon  lagi ngatur ulang banyak hal di tubuhmu.",
     },
     {
       "image": "assets/images/question8_card1.png",
       "answer": "Ya",
-      "explanationTrue": "",
-      "explanationFalse": "",
+      "explanationTrue": 
+      "Yes, bener banget! Pubertas juga ngaruh ke perasaan, bukan cuma fisik. Hormon bisa bikin mood  kamu berubah-ubah.",
+      "explanationFalse": 
+      "Ups, kurang tepat nih! Pubertas ngaruh ke tubuh dan perasaan kamu juga, makanya kadang mood  suka berubah tanpa alasan.",
     },
     {
       "image": "assets/images/question9_card1.png",
       "answer": "Tidak",
-      "explanationTrue": "",
-      "explanationFalse": "",
+      "explanationTrue": 
+      "Yes, bener banget! Totally normal ya Gennies! Itu tanda tubuh kamu lagi berkembang. Semua orang  ngalamin, jadi gak perlu khawatir.",
+      "explanationFalse": 
+      "Ups, kurang tepat nih! Rambut tumbuh di area itu wajar banget kok. Justru tandanya hormon  pubertas kamu lagi aktif.",
     },
     {
       "image": "assets/images/question10_card1.png",
       "answer": "Ya",
-      "explanationTrue": "",
-      "explanationFalse": "",
+      "explanationTrue": 
+      "Yes, bener banget! Itu tanda hormon lagi beradaptasi. Karena itu bagian dari proses tumbuh  dewasa.",
+      "explanationFalse": 
+      "Ups, kurang tepat nih! Gampang marah atau sensitif pas pubertas itu normal banget. Tubuh kamu  lagi menyesuaikan diri sama hormon baru.",
     },
   ];
 
