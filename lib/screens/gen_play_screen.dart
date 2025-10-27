@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../pages/question_page1.dart'; // yang udah kamu buat
+import '../pages/question_page1.dart';
+import '../pages/question_page3.dart';
 
 class GenPlayScreen extends StatefulWidget {
   const GenPlayScreen({super.key});
@@ -25,11 +26,11 @@ class _GenPlayScreenState extends State<GenPlayScreen> {
       ]
     },
     {
-      "title": "Waspada dan Kenali Risiko IMS",
+      "title": "Jaga Organ Reproduksi Kamu Yuk!",
       "played": false,
       "sub": [
-        {"text": "Cara penularan IMS", "done": false},
-        {"text": "Pencegahan sejak dini", "done": false},
+        {"text": "Kebersihan Itu Penting", "done": false},
+        {"text": "Cinta Diri, Jaga Diri", "done": false},
       ],
     },
     {
@@ -174,7 +175,7 @@ class _GenPlayScreenState extends State<GenPlayScreen> {
                                         activeIndex = index;
                                       });
 
-                                      // kalau sudah dimainkan → konfirmasi ulang
+                                      // Jika sudah dimainkan sebelumnya → konfirmasi ulang
                                       if (isPlayed) {
                                         final bool? replay = await showDialog(
                                           context: context,
@@ -208,22 +209,24 @@ class _GenPlayScreenState extends State<GenPlayScreen> {
                                             ],
                                           ),
                                         );
-
                                         if (replay != true) return;
                                       }
 
-                                      // arahkan ke halaman pertanyaan sesuai index
+                                      // 🔹 Penentuan halaman berdasarkan judul
+                                      final title = game["title"]
+                                          ?.toString()
+                                          .trim()
+                                          .toLowerCase();
+
                                       Widget? targetPage;
-                                      switch (index) {
-                                        case 0:
-                                          targetPage =
-                                              const QuestionPage1(); // yang udah kamu buat
-                                          break;
-                                        case 1:
-                                        case 2:
-                                        case 3:
-                                          targetPage = null; // belum dibikin
-                                          break;
+                                      if (title ==
+                                          "ayo kenalan sama tubuh kamu") {
+                                        targetPage = const QuestionPage1();
+                                      } else if (title ==
+                                          "jaga organ reproduksi kamu yuk!") {
+                                        targetPage = const QuestionPage3();
+                                      } else {
+                                        targetPage = null;
                                       }
 
                                       if (targetPage == null) {
@@ -305,7 +308,8 @@ class _GenPlayScreenState extends State<GenPlayScreen> {
                                               game["sub"].length,
                                               (i) {
                                                 final isPressed =
-                                                    pressedSubIndex[index] == i;
+                                                    pressedSubIndex[index] ==
+                                                        i;
                                                 return AnimatedContainer(
                                                   duration: const Duration(
                                                       milliseconds: 100),
@@ -345,7 +349,8 @@ class _GenPlayScreenState extends State<GenPlayScreen> {
                                                     children: [
                                                       Expanded(
                                                         child: Text(
-                                                          game["sub"][i]["text"],
+                                                          game["sub"][i]
+                                                              ["text"],
                                                           style: GoogleFonts
                                                               .poppins(
                                                             fontSize: 13,
